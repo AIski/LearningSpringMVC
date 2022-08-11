@@ -30,17 +30,32 @@ Country:
 
 <form:select path="country">
 
-<form:option value="Brazil" label="Brazil" />
-<form:option value="Russia" label="Russia" />
-<form:option value="USA" label="USA" />
-<form:option value="France" label="France" />
-<form:option value="China" label="China" />
+<form:options items="${student.countryOptions}" />
 
 </form:select>
+
 <br><br>
 
-<input type="submit" value="Submit" />
+Operating Systems:
+<br>
+Windows <form:checkbox path="operatingSystems" value="Windows" />
+Mac <form:checkbox path="operatingSystems" value="Mac" />
+Linux <form:checkbox path="operatingSystems" value="Linux" />
+Android <form:checkbox path="operatingSystems" value="Androids" />
 
+
+<br><br>
+
+
+Favorite Programming Language:
+<br>
+Java <form:radiobutton path="favoriteLanguage" value="Java" />
+C# <form:radiobutton path="favoriteLanguage" value="C#" />
+PHP <form:radiobutton path="favoriteLanguage" value="PHP" />
+Ruby <form:radiobutton path="favoriteLanguage" value="Ruby" />
+
+<br><br>
+<input type="submit" value="Submit" />
 
 </form:form>
 
